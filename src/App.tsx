@@ -6,6 +6,8 @@ import {
   Dumbbell,
   Droplets
 } from "lucide-react";
+import fitCouple from "./assets/fit-couple.png";
+import manEating from "./assets/man-eating.webp";
 
 function App() {
   return (
@@ -28,7 +30,7 @@ function App() {
         className="relative flex flex-col w-full h-screen px-12 pt-12 lg:pt-20 lg:px-20"
       >
         <img
-          src="src\assets\man-eating.webp"
+          src={manEating}
           alt="In shape man eating a salad"
           className="lg:block hidden hero-image absolute top-0 bottom-0 right-0 w-[40%] -z-10"
         />
@@ -90,10 +92,7 @@ function App() {
           </ButtonLG>
         </div>
         <div className="flex items-center justify-center w-full h-1/2 lg:h-full ">
-          <img
-            className="object-contain w-full max-h-full"
-            src="src\assets\fit-couple.png"
-          />
+          <img className="object-contain w-full max-h-full" src={fitCouple} />
         </div>
       </section>
       <section
