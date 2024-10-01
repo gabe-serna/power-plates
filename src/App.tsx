@@ -92,47 +92,40 @@ function App() {
       </section>
       <section
         id="plans"
-        className="flex flex-col items-center w-full h-screen px-12 pt-24 pb-24 lg:pt-32 lg:px-32 bg-slate-800"
+        className="flex flex-col items-center w-full px-12 pt-24 pb-24 h-fit lg:h-screen lg:pt-32 lg:px-32 bg-slate-800"
       >
         <Heading1 className="text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
           Personalized Plans for your Goals
         </Heading1>
-        <div className="flex flex-col items-center justify-center mt-12 size-full lg:flex-row lg:space-x-12">
-          <figure className="flex flex-col items-center justify-start w-full h-full p-12 pt-24 lg:w-full gradient-border">
-            <BicepsFlexed className="size-16 stroke-orange-400" />
-            <figcaption className="mt-4 text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
-              Bulking
-            </figcaption>
-            <Paragraph
-              style={{ width: "clamp(45ch, 50%, 75ch)" }}
-              className="max-w-full mt-4 text-center text-slate-400"
-            >
-              Maximize muscle growth with high-protein meals that fuel strength and
-              recovery.
-            </Paragraph>
+        <div className="flex flex-col items-center justify-center mt-12 size-full lg:flex-row lg:space-x-12 max-lg:space-y-10">
+          <figure className="flex flex-col items-center justify-center w-full p-8 lg:p-12 h-min lg:h-full lg:w-full gradient-border lg:min-w-72">
+            <BicepsFlexed className="min-w-10 min-h-10 lg:min-w-16 lg:min-h-16 stroke-orange-400" />
+            <div className="flex flex-col max-lg:w-[clamp(45ch,_50%,_75ch)] max-lg:max-w-full">
+              <figcaption className="mt-4 text-xl font-semibold text-center text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
+                Bulking
+              </figcaption>
+              <Paragraph className="max-w-[clamp(45ch,_50%,_75ch)] mt-2 lg:mt-4 text-center text-slate-400">
+                Maximize muscle growth with high-protein meals that fuel strength and
+                recovery.
+              </Paragraph>
+            </div>
           </figure>
-          <figure className="flex flex-col items-center justify-start w-full h-full p-12 pt-24 lg:w-full gradient-border">
-            <Dumbbell className="size-16 stroke-orange-400" />
-            <figcaption className="mt-4 text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
+          <figure className="flex flex-col items-center justify-center w-full p-8 lg:p-12 h-min lg:h-full lg:w-full gradient-border lg:min-w-72">
+            <Dumbbell className="min-w-10 min-h-10 lg:min-w-16 lg:min-h-16 stroke-orange-400" />
+            <figcaption className="mt-4 text-xl font-semibold text-center text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
               Maintaining
             </figcaption>
-            <Paragraph
-              style={{ width: "clamp(45ch, 50%, 75ch)" }}
-              className="max-w-full mt-4 text-center text-slate-400"
-            >
+            <Paragraph className="max-w-[clamp(45ch,_50%,_75ch)] mt-2 lg:mt-4 text-center text-slate-400">
               Maintain your results with balanced meals that support peak performance
               and well-being.
             </Paragraph>
           </figure>
-          <figure className="flex flex-col items-center justify-start w-full h-full p-12 pt-24 lg:w-full gradient-border">
-            <Droplets className="size-16 stroke-orange-400" />
-            <figcaption className="mt-4 text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
+          <figure className="flex flex-col items-center justify-center w-full p-8 lg:p-12 h-min lg:h-full lg:w-full gradient-border lg:min-w-72">
+            <Droplets className="min-w-10 min-h-10 lg:min-w-16 lg:min-h-16 stroke-orange-400" />
+            <figcaption className="mt-4 text-xl font-semibold text-center text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
               Cutting
             </figcaption>
-            <Paragraph
-              style={{ width: "clamp(45ch, 50%, 75ch)" }}
-              className="max-w-full mt-4 text-center text-slate-400"
-            >
+            <Paragraph className="max-w-[clamp(45ch,_50%,_75ch)] mt-2 lg:mt-4 text-center text-slate-400">
               Stay lean with low-calorie, nutrient-packed meals designed to burn fat
               while keeping you full.
             </Paragraph>
