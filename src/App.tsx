@@ -1,5 +1,11 @@
 import { ButtonLG, ButtonMD, Heading1, Paragraph } from "./components/Typography";
-import { MapPin, UtensilsCrossed } from "lucide-react";
+import {
+  MapPin,
+  UtensilsCrossed,
+  BicepsFlexed,
+  Dumbbell,
+  Droplets
+} from "lucide-react";
 
 function App() {
   return (
@@ -55,7 +61,7 @@ function App() {
           maskImage:
             "radial-gradient(ellipse 225% 190% at bottom, black 0%, black 49.8%, black 49.95%, transparent 50%, transparent 80%)"
         }}
-        className="flex flex-col-reverse items-center justify-center w-full h-screen px-12 pt-12 lg:justify-between bg-slate-800 lg:pt-20 lg:flex-row-reverse lg:px-20"
+        className="flex flex-col-reverse items-center justify-center w-full h-screen px-12 pt-12 outline-none lg:justify-between bg-slate-800 lg:pt-20 lg:flex-row-reverse lg:px-20"
       >
         <div className="flex flex-col items-start justify-center w-full">
           <Heading1 className="text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
@@ -86,8 +92,53 @@ function App() {
       </section>
       <section
         id="plans"
-        className="w-full h-screen px-12 pt-12 lg:pt-20 lg:px-20 bg-slate-800"
-      ></section>
+        className="flex flex-col items-center w-full h-screen px-12 pt-24 pb-24 lg:pt-32 lg:px-32 bg-slate-800"
+      >
+        <Heading1 className="text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
+          Personalized Plans for your Goals
+        </Heading1>
+        <div className="flex flex-col items-center justify-center mt-12 size-full lg:flex-row lg:space-x-12">
+          <figure className="flex flex-col items-center justify-start w-full h-full p-12 pt-24 lg:w-full gradient-border">
+            <BicepsFlexed className="size-16 stroke-orange-400" />
+            <figcaption className="mt-4 text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
+              Bulking
+            </figcaption>
+            <Paragraph
+              style={{ width: "clamp(45ch, 50%, 75ch)" }}
+              className="max-w-full mt-4 text-center text-slate-400"
+            >
+              Maximize muscle growth with high-protein meals that fuel strength and
+              recovery.
+            </Paragraph>
+          </figure>
+          <figure className="flex flex-col items-center justify-start w-full h-full p-12 pt-24 lg:w-full gradient-border">
+            <Dumbbell className="size-16 stroke-orange-400" />
+            <figcaption className="mt-4 text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
+              Maintaining
+            </figcaption>
+            <Paragraph
+              style={{ width: "clamp(45ch, 50%, 75ch)" }}
+              className="max-w-full mt-4 text-center text-slate-400"
+            >
+              Maintain your results with balanced meals that support peak performance
+              and well-being.
+            </Paragraph>
+          </figure>
+          <figure className="flex flex-col items-center justify-start w-full h-full p-12 pt-24 lg:w-full gradient-border">
+            <Droplets className="size-16 stroke-orange-400" />
+            <figcaption className="mt-4 text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
+              Cutting
+            </figcaption>
+            <Paragraph
+              style={{ width: "clamp(45ch, 50%, 75ch)" }}
+              className="max-w-full mt-4 text-center text-slate-400"
+            >
+              Stay lean with low-calorie, nutrient-packed meals designed to burn fat
+              while keeping you full.
+            </Paragraph>
+          </figure>
+        </div>
+      </section>
     </>
   );
 }
