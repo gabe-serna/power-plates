@@ -28,7 +28,7 @@ export const Paragraph = ({ children, className, style }: Props) => {
     <p
       style={style}
       className={
-        "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal mt-2 text-stone-500 " +
+        "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-stone-500 " +
         className
       }
     >
@@ -51,7 +51,7 @@ export const ButtonLG = ({
       <button
         type="button"
         className={
-          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-white rounded-md bg-green-600 hover:bg-green-700 transition-colors px-6 py-2 " +
+          "2xl:text-2xl xl:text-xl lg:text-lg text-lg font-normal text-white rounded-full bg-blue-600 hover:bg-blue-700 transition-colors lg:px-8 lg:py-2 px-5 py-1 " +
           className
         }
       >
@@ -63,7 +63,7 @@ export const ButtonLG = ({
       <button
         type="button"
         className={
-          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-medium text-stone-500 rounded-md bg-white border-stone-500 border-2 px-6 py-2 " +
+          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-medium text-stone-500 rounded-full bg-white border-stone-500 border-2 px-6 py-2 " +
           className
         }
       >
@@ -75,7 +75,7 @@ export const ButtonLG = ({
       <button
         type="button"
         className={
-          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-green-600 rounded-md bg-white px-6 py-2 " +
+          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-green-600 rounded-full bg-white px-6 py-2 " +
           className
         }
       >
@@ -95,7 +95,7 @@ export const ButtonMD = ({
       <button
         type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-white rounded-md bg-green-600 hover:bg-green-700 transition-colors px-4 py-1 " +
+          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-white rounded-full bg-blue-600 hover:bg-blue-700 transition-colors px-4 py-1 " +
           className
         }
       >
@@ -107,7 +107,7 @@ export const ButtonMD = ({
       <button
         type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-medium text-stone-500 rounded-md bg-white border-stone-500 border-2 px-4 py-1 " +
+          "2xl:text-xl xl:text-lg lg:text-base text-sm font-medium text-stone-500 rounded-full bg-white border-stone-500 border-2 px-4 py-1 " +
           className
         }
       >
@@ -119,7 +119,7 @@ export const ButtonMD = ({
       <button
         type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-green-600 rounded-md bg-white px-4 py-1 " +
+          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-green-600 rounded-full bg-white px-4 py-1 " +
           className
         }
       >
