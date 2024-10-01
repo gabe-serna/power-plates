@@ -6,9 +6,9 @@ interface Props {
 
 export const Heading1 = ({
   children,
-  className = "text-xl 2xl:text-4xl xl:text-3xl lg:text-2xl"
+  className = "text-xl 2xl:text-4xl xl:text-3xl lg:text-2xl font-semibold"
 }: Props) => {
-  return <h1 className={"font-bold " + className}>{children}</h1>;
+  return <h1 className={className}>{children}</h1>;
 };
 
 export const Heading2 = ({ children, className }: Props) => {
@@ -95,7 +95,7 @@ export const ButtonMD = ({
       <button
         type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-white rounded-full bg-blue-600 hover:bg-blue-700 transition-colors px-4 py-1 " +
+          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-white rounded-full bg-blue-600 hover:bg-blue-700 transition-colors lg:px-6 px-4 py-1 " +
           className
         }
       >
