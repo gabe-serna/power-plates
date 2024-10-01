@@ -74,7 +74,7 @@ export const ButtonLG = ({
       <button
         type="button"
         className={
-          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-green-600 rounded-full bg-white px-6 py-2 " +
+          "2xl:text-2xl xl:text-xl lg:text-lg text-base font-normal text-blue-500 rounded-full bg-white px-6 py-2 " +
           className
         }
       >
@@ -106,7 +106,7 @@ export const ButtonMD = ({
       <button
         type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-medium text-stone-500 rounded-full bg-white border-stone-500 border-2 px-4 py-1 " +
+          "2xl:text-lg xl:text-base lg:text-sm text-xs font-medium text-blue-500 rounded-full bg-white border-blue-500 border-2 lg:px-6 px-4 py-1 transition-colors hover:bg-blue-500 hover:text-white " +
           className
         }
       >
@@ -118,7 +118,7 @@ export const ButtonMD = ({
       <button
         type="button"
         className={
-          "2xl:text-xl xl:text-lg lg:text-base text-sm font-normal text-green-600 rounded-full bg-white px-4 py-1 " +
+          "2xl:text-lg xl:text-base lg:text-sm text-xs font-normal text-black rounded-full bg-white px-4 py-1 " +
           className
         }
       >

@@ -10,11 +10,14 @@ import {
 function App() {
   return (
     <>
-      <nav className="fixed z-20 flex items-center justify-between w-full h-12 px-12 py-2 bg-white lg:px-20 lg:h-20">
+      <nav className="fixed left-0 right-0 z-20 flex items-center justify-between w-1/2 h-12 px-12 py-2 mx-auto bg-white rounded-b-full lg:px-20 lg:h-20">
         <Heading1 className="text-xl font-semibold 2xl:text-4xl xl:text-3xl lg:text-2xl">
           Power Plates
         </Heading1>
-        <ButtonMD variant="primary">Shop</ButtonMD>
+        <div>
+          <ButtonMD variant="tertiary">Log In</ButtonMD>
+          <ButtonMD variant="secondary">Sign Up</ButtonMD>
+        </div>
       </nav>
       <section
         id="hero"
