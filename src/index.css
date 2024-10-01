@@ -22,6 +22,39 @@ button {
   font-family: Karla, Helvetica, Arial, sans-serif;
 }
 
+.hero-image {
+  mask-image: radial-gradient(
+    ellipse 225% 190% at top right,
+    black 0%,
+    black 49.8%,
+    black 49.95%,
+    transparent 50%,
+    transparent 80%
+  );
+}
+.info-curve {
+  mask-image: radial-gradient(
+    ellipse 225% 190% at bottom,
+    black 0%,
+    black 49.8%,
+    black 49.95%,
+    transparent 50%,
+    transparent 80%
+  );
+}
+
+@media screen and (max-width: 640px) {
+  .info-curve {
+    mask-image: radial-gradient(
+      ellipse 350% 190% at bottom,
+      black 0%,
+      black 49.8%,
+      black 49.95%,
+      transparent 50%,
+      transparent 80%
+    );
+  }
+}
 .gradient-border {
   position: relative;
 }

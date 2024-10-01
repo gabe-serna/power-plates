@@ -10,19 +10,28 @@ import {
 function App() {
   return (
     <>
-      <nav className="fixed left-0 right-0 z-20 flex items-center justify-between w-1/2 h-12 px-12 py-2 mx-auto bg-white rounded-b-full lg:px-20 lg:h-20">
-        <Heading1 className="text-xl font-semibold 2xl:text-4xl xl:text-3xl lg:text-2xl">
+      <nav className="fixed left-0 right-0 z-20 flex items-center justify-between w-full h-12 px-12 py-2 mx-auto bg-white rounded-b-full lg:w-1/2 lg:px-20 lg:h-20">
+        <Heading1 className="text-xl font-semibold 2xl:text-4xl xl:text-3xl lg:text-2xl text-nowrap">
           Power Plates
         </Heading1>
-        <div>
-          <ButtonMD variant="tertiary">Log In</ButtonMD>
-          <ButtonMD variant="secondary">Sign Up</ButtonMD>
+        <div className="flex flex-nowrap">
+          <ButtonMD variant="tertiary" className="mr-4 text-nowrap">
+            Log In
+          </ButtonMD>
+          <ButtonMD variant="secondary" className="text-nowrap">
+            Sign Up
+          </ButtonMD>
         </div>
       </nav>
       <section
         id="hero"
         className="relative flex flex-col w-full h-screen px-12 pt-12 lg:pt-20 lg:px-20"
       >
+        <img
+          src="src\assets\man-eating.webp"
+          alt="In shape man eating a salad"
+          className="lg:block hidden hero-image absolute top-0 bottom-0 right-0 w-[40%] -z-10"
+        />
         <Heading1 className="mt-20 text-3xl font-semibold 2xl:text-6xl xl:text-5xl lg:text-4xl lg:mt-48">
           We Make Food. You Make Progress.
         </Heading1>
@@ -41,12 +50,12 @@ function App() {
               className="w-full py-4 mr-3 rounded-lg focus:outline-none"
             ></input>
           </div>
-          <div className="flex mt-8 items-center justify-center border-blue-500 border-2 lg:border-[3px] rounded-lg min-w-max w-full lg:w-1/6">
+          <div className="flex mt-8 items-center justify-center border-blue-500 border-2 lg:border-[3px] rounded-lg min-w-max w-full lg:w-1/6 bg-white">
             <UtensilsCrossed className="mx-3 min-h-7 min-w-7 stroke-slate-600" />
             <select
               title="Select Goal"
               defaultValue={"Maintenence"}
-              className="w-full py-4 mr-3 rounded-lg focus:outline-none"
+              className="w-full py-4 rounded-lg mr-3rounded-lg focus:outline-none"
             >
               <option value="Maintenence">Maintenence</option>
               <option value="Bulking">Bulking</option>
@@ -58,13 +67,7 @@ function App() {
       </section>
       <section
         id="info"
-        style={{
-          WebkitMaskImage:
-            "radial-gradient(ellipse 225% 190% at bottom, black 0%, black 49.8%, black 49.95%, transparent 50%, transparent 80%)",
-          maskImage:
-            "radial-gradient(ellipse 225% 190% at bottom, black 0%, black 49.8%, black 49.95%, transparent 50%, transparent 80%)"
-        }}
-        className="flex flex-col-reverse items-center justify-center w-full h-screen px-12 pt-12 outline-none lg:justify-between bg-slate-800 lg:pt-20 lg:flex-row-reverse lg:px-20"
+        className="flex flex-col-reverse items-center justify-center w-full h-screen px-12 pt-12 outline-none info-curve lg:justify-between bg-slate-800 lg:pt-20 lg:flex-row-reverse lg:px-20"
       >
         <div className="flex flex-col items-start justify-center w-full">
           <Heading1 className="text-xl font-semibold text-white 2xl:text-4xl xl:text-3xl lg:text-2xl">
