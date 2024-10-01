@@ -6,6 +6,8 @@ Landing page for a bodybuilding meal prep service.
 
 Total Time: 4 hours
 
+https://power-plates.vercel.app/
+
 ## Planning
 
 ![picture of planning notes](https://i.ibb.co/z52g50M/image.png)
